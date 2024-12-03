@@ -1,0 +1,143 @@
+@media (min-width: 576px) {
+    .container {
+        max-width:540px
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width:720px
+    }
+    .comp_history .row-item, .services .row-item{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width:960px
+    }
+    .leadership .row {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width:1140px
+    }
+}
+
+
+@media (max-width: 1200px) {
+    header nav{
+        background: black !important;
+        padding: 8px 0;
+        margin: 0px;
+    }
+    .nav-container{
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav-container{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    header label.bar-menu{
+        display: block !important
+    }
+    .nav-links ul{
+        position: absolute;
+        width: 100%;
+        top: -600%;
+        left: 0px;
+        text-align: left;
+        background-color: #000;
+        transition: all 0.5s;
+        flex-direction: column;
+        opacity: 0;
+        z-index: -1
+      }
+      .nav-links ul li{
+        display: block;
+      }
+      .nav-links ul li a{
+        padding: 8px 15px;
+      }
+      #bar-menu:checked ~ .nav-links ul{
+        opacity: 1;
+        top: 50px;
+      }
+      .text h1 {
+        font-size: 48px !important;
+      }
+
+    .row{
+        flex-wrap: wrap;
+    }
+
+    .hero-img-about3 {
+        margin: 0;
+    }
+    .dotted-img{
+    top: 130px;
+    left: 100px;
+    width: 200px;
+    }
+    footer .row, .contact-info2 .row{
+        flex-wrap: nowrap !important ;
+    }
+}
+
+@media (max-width: 767px) {
+    footer .row, .leadership .row{
+        flex-wrap:wrap !important;
+    }
+    .testimonial-inner{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .styled-p{
+        margin-top: 0;
+        padding: 0;
+    }
+    .comp_history{
+        flex-wrap: wrap-reverse !important;
+    }
+    .services .row-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+@media (max-width: 576px) {
+    .project-inner{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .about_img{ 
+        max-height: 60vh;
+      }
+      .contact-info2 .row{
+        flex-wrap: wrap !important ;
+    }
+    .contact-info .form-group{
+        margin: 0 20px;
+        width: 70%;
+    }
+}
+
+@media (max-width: 425px) {
+    .about_img{
+        max-height: 50vh;
+    }
+    
+}
+@media (max-width: 360px) {
+    .about_img{
+        max-height: 40vh;
+    }
+}
